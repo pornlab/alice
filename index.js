@@ -1,3 +1,4 @@
+
 // Для асинхронной работы используется пакет micro.
 const { json } = require('micro');
 
@@ -37,7 +38,7 @@ module.exports = async (req, res) => {
 
     // Из запроса извлекаются свойства request, session и version.
     const { request, session, version } = await json(req);
-
+    console.log('request', request);
     // В тело ответа вставляются свойства version и session из запроса.
     // Подробнее о формате запроса и ответа — в разделе Протокол работы навыка.
     res.end(JSON.stringify(

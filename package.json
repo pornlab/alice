@@ -10,6 +10,8 @@
     "homepage": "https://github.com/pornlab/alice",
     "dependencies": {
         "micro": "^9.1.0",
-        "mqtt": "^4.2.6"
+        "mqtt": "^4.2.6",
+        "now": "^21.0.1",
+        "vercel": "^21.2.3"
     }
 }
